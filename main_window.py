@@ -34,8 +34,8 @@ def calc():
     days = int(the_age_avlue) * 365
 
     line_one = f"your age in monthes is: {months}"
-    line_two = f"your age in monthes is: {weeks}"
-    line_three = f"your age in monthes is: {days}"
+    line_two = f"your age in weeks is: {weeks}"
+    line_three = f"your age in days is: {days}"
 
     all_lines = [line_one, line_two,line_three]
 
