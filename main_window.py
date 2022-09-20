@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-from turtle import width
 
 #Create the main window of the app
 main_window = Tk()
