@@ -27,7 +27,7 @@ while True:
             print(port)
         #input selected port
         val = input("\nselect port: COM")
-        #insure you selected one of the existed port then printing the selected one
+        #user select one of the existed port then printing the selected one
         for x in range(0,len(portList)):
             if portList[x].startswith("COM" + str(val)):
                 portvar = "COM" + str(val)
@@ -56,6 +56,9 @@ while True:
         serialInst.write(d.encode())
     elif(d == 'L'):
         serialInst.write(d.encode())
+        break
+    
+    #reading the sent message through the port and printing it 
     # if serialInst.in_waiting:
     #     packet = serialInst.readline()
     #     print(packet.decode("utf").rstrip('\n'))
